@@ -1,0 +1,26 @@
+Comando enquanto(While)
+
+- O comando While e quase a mesma coisa do comando for,
+o que muda é que enquanto o comando for precisa de uma base
+númerica para chegar até o resultado. O comando While não pre-
+cisa. Segue o exemplo abaixo...
+
+Ex:
+
+    for c in range(1, 10):
+       passo
+    pega
+
+Vamos supor que esse comando é para pegar uma maçã. Se observarmos
+o comando já tem pré definido os passo que o boneco terá que dar para 
+pegar a maçã, certo?
+
+Ex: 
+
+    while not maçã:
+       passo
+    pega
+
+Já no comando while, podemos ver que, o comando não tem númeração pré definidas
+ali ele mostra que ele vai rodar até chegar na maçã. Se ele não chegar ele vai con-
+tinuar rodando. Então o comando só vai parar quando a condição for falsa.
