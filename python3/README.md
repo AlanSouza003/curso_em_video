@@ -17,7 +17,7 @@
 5. **Condições (Parte 1).**
 6. **Adicionando Cores.**
 
-* **Status:** Concluido ✅ [Ver Código](https://github.com/AlanSouza003/python3/tree/main/hello_world/mundo_1)
+* **Status:** Concluido ✅ [Ver Código](https://github.com/AlanSouza003/curso_em_video/tree/main/python3/mundo_1)
 
 ### 🌎 Mundo 2
 1. **Condições Aninhadas**
@@ -25,7 +25,7 @@
 3. **Estrutura de Repetição While**
 4. **Interrompendo Repetições While**
 
-* **Status:** Em Andamento ⏳ [Ver Código](https://github.com/AlanSouza003/python3/tree/main/hello_world/mundo_2/aula12)
+* **Status:** Em Andamento ⏳ [Ver Código](https://github.com/AlanSouza003/curso_em_video/tree/main/python3/mundo_2)
 
 ### 🌎 Mundo 3
 1. **Tuplas.**
