@@ -1,0 +1,19 @@
+Interrompendo repetições while.
+
+Exemplo em Algoritmo                     Exemplo em Python
+
+    enquanto verdadeiro                      while true:
+        se bloco então                          if bloco:
+            passo                                   passo
+        senão                                   else:
+            pula                                    pula
+        se moeda então                          if moeda:
+            pega                                    pega
+        se trofeu então                         if trofeu:
+            pula                                    pula 
+            interrompa                              break
+    pega                                     pega
+
+Neste exemplo mostramos que não existe o uma flag (condição de parada), o comando vai ser um loop 
+infinito. Mas, nesse caso utilizamos a condição interrompa, que nesse caso o programador que escolhe
+qual sera a condição de parada do programa.
