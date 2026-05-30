@@ -36,7 +36,7 @@
 6. **Funções (Parte 2).**
 7. **Módulos e Pacotes.**
 8. **Tratamento de Erros e Exceções**
-* **Status:** Em Andamento ⏳[Ver Código](https://github.com/AlanSouza003/curso_em_video/tree/main/python3/mundo_2)
+* **Status:** Em Andamento ⏳[Ver Código](https://github.com/AlanSouza003/curso_em_video/tree/main/python3/mundo_3)
 
 ### 🌎 Mundo 4
 1. **Orientação a Objetos**
