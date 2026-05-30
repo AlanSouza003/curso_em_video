@@ -25,7 +25,7 @@
 3. **Estrutura de Repetição While**
 4. **Interrompendo Repetições While**
 
-* **Status:** Em Andamento ⏳ [Ver Código](https://github.com/AlanSouza003/curso_em_video/tree/main/python3/mundo_2)
+* **Status:** Concluido ✅ [Ver Código](https://github.com/AlanSouza003/curso_em_video/tree/main/python3/mundo_2)
 
 ### 🌎 Mundo 3
 1. **Tuplas.**
@@ -36,7 +36,7 @@
 6. **Funções (Parte 2).**
 7. **Módulos e Pacotes.**
 8. **Tratamento de Erros e Exceções**
-* **Status:** Não Iniciado 🔒
+* **Status:** Em Andamento ⏳[Ver Código](https://github.com/AlanSouza003/curso_em_video/tree/main/python3/mundo_2)
 
 ### 🌎 Mundo 4
 1. **Orientação a Objetos**
