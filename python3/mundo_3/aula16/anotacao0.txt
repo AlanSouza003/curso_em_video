@@ -1,0 +1,5 @@
+Variáves compostas (Tuplas)
+
+O que é uma tupla?
+    - É uma variável que guarda até quatro valores. Pode ser até mais ou menos também.
+# ! OBS: As tuplas são IMUTÁVEIS

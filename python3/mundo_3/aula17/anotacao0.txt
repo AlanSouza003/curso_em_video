@@ -1,0 +1,38 @@
+Listas em python parte 1
+
+- Em python quando utilizamos Listas, usamos os colchetes[]. Como dito antes as 
+tuplas são imutáveis. Mas, no caso das listas em python, é possivel sim, modificar
+um item dentro dos colchetes.
+
+- Outra característica das listas, são adicionar novos itens, coisa que em uma tupla
+não poderia acontecer. E para isso acontecer utilizamos um comando adicional,
+chamado: "append('')". Um outro metodo é adicionar um item antes do primeiro item
+ou entre outro, dentro da listas usando o comando insert(numero, 'item').
+
+Como remover um item dentro de uma lista?
+
+- Existem três possibilidade de isso acontecer. Segue abaixo os comandos utilizados.
+
+    - Nesse comando removemos pelo número da chave de onde o item se encontra
+        - del lanche[3]
+        - ou
+        - lache.pop(3) # Para remover o ultimo item da lista utilizamos dessa forma: 
+            lanche.pop() # Assim removemos o ultimo item.
+
+    - Nesse comando removemos pelo contéudo que esta dentro da lista.
+        - lanche.remove('item')
+
+- Como evitar quebras do programa?
+
+    - Usamos a estrutura condicional para verificarmos se o item existe na lista.
+        - if 'pizza' in lanche:
+            - lanche.remove('pizza')
+    - Dessa forma so vai ser eliminda caso exista o item 'pizza' na lista.
+
+Criar listas usando o comando range:
+
+    - Fazemos da seguinte forma:
+        - valores = list(range(4,11))
+    - Caso o usuário digite números de forma aleatória, e se quiser coloca-los em
+    ordem, utilizamos o comando sort(), assim os números ficaram em ordem.
+    - E se quiser colocar em ordem reversa é utilizado da seguinte maneira sort(reverse=True)
