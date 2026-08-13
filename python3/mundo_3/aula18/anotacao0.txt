@@ -1,0 +1,34 @@
+Variáveis compostas (Listas parte 2)
+
+- Nesta fase iremos aprender a fazer analises de listas dentro de listas. Exemplo:
+    - Temos uma lista chamada "dados":
+        dados = list()
+        dados.append('Pedro')
+        dados.append(25)
+    Como podemos ver, esta lista esta armazenando o nome Pedro e a idade dele que é 25.
+
+    - Agora teremos uma nova estrutura chamada "pessoas". Nessa nova estrutura poderiamos
+    simplesmente dar um "append", mas ao invés disso iremos fazer uma copia. Exemplo abaixo:
+        pessoas = list()
+        pessoas.append(dados[:])
+    Aqui estou criando uma nova estrutura é dentro desse primeiro elemento não vai ter 
+    o nome Pedro no primeiro elemento e a idade 25 no segundo elemento, mas sim os dois no primeiro
+    elemento. Segue um exemplo abaixo de como funciona uma lista dentro de outra lista.
+
+            pessoas = [['Pedro', 25], ['Maria', 19], ['João', 32]]
+                           0      1       0      1       0     1
+                               0              1             2
+    Exemplos de prints: 
+
+        print(pessoas[0][0]) # Aqui estou pedindo para mostra o elemento 0 da lista pessoas
+                             e o outro 0 estou pedindo para mostra o item 0 dentro da lista 
+                             pessoas, que vai ser o 'Pedro'.
+
+        print(pesssoas[1][1]) # Mesmo raciocínio do primeiro exemplo. Ele vai mostra o elemento 1
+                               da lista pessoas e dentro da lista o item 1, que sera a idade 19.
+
+        print(pessoas[2][0]) # Aqui ele vai mostra o elemento 2 da lista pessoas, e dentro
+                             da lista o item 0 que será o nome 'João'.
+
+        print(pessoas[1]) # Neste exemplo ele vai mostra todo o contéudo do elemento 1 da lista
+                          pessoas.
