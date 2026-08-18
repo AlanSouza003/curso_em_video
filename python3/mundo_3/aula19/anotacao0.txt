@@ -1,0 +1,68 @@
+Variáveis compostas (Dicionários)
+
+- Dicionários em python são identificados por chaves {}. Podemos fazer uma declaração de 
+Dicionários da seguinte forma:
+    Dados = dict()
+    Dados = {}
+Segue abaixo como podemos fazer indices por nome e idade em uma lista usando o Dicionário:
+    Dados = {'nome':'Pedro', 'idade':25}
+    - O nome passa a ser o identificador ao invés dos números.
+    - E do mesmo raciocínio usamos para idade.
+- Dessa forma não iremos dar print(Dados[0]), mas sim, print(Dados['nome']).
+- Da mesmo forma para a idade, invés de print(Dados[1]), iremos dar print(Dados['idade'].)
+
+- E para adicionarmos mais um elemento? No caso do Dicionário o 'append' não funciona.
+Então fazemos da seguinte forma:
+    Dados['sexo'] = 'M'
+O programa vai verificar se existe o indice 'sexo', caso não exista, ele ira adiciona-lo.
+
+- Para remover um elemento dentro do Dicionário usamos o comando 'Del'.
+    del dados['idade']
+
+- Vamos de um exemplo prático:
+
+        filme
+         'Star Wars', 1977, 'George Lucas'
+           titulo      ano     diretor
+
+    filme = {
+        'titulo':'Star Wars', 
+        'ano':1977,
+        'diretor':'George Lucas'
+    }
+Obs: Os elementos chamados de: titulo, ano e diretor. Para o python isso são chaves, mais 
+conhecidos como 'Keys'.
+Abaixo vai uma explicação sobre chaves, valor e item:
+
+    print(filme.values()) # Values é um método interno do python.
+    - Aqui ele retorna todos os valores dentro do Dicionário filme (Da parte de cima). 
+    Exemplo: 'Star Wars', 1977, 'George Lucas'
+
+    - Agora se eu quiser a parte debaixo por exemplo, 'titulo', 'ano' e 'diretor' usamos:
+        print(filme.keys())
+
+    - E se eu quiser tudo? Tanto os valores quanto as chaves? Usamos:
+        print(filme.items())
+        Para usarmos esse conceitos em loops, é quase igual ao enumerate. 
+        Segue abaixo o exemplo:
+            for k, v in filme.items():
+                print(f"O {k} é {v}") # Saída do print será: 'O titulo é Star Wars' 
+                                        isso no primerio laço.
+                                        Segundo laço: 'O ano é 1977'
+                                        Terceiro laço: 'O diretor é George Lucas'
+            - O 'for' vai finalizar quando todo contéudo dentro do Dicionário for mostrado.
+
+- Uma coisa que podemos fazer é juntar listas com Dicionários. Exemplo:
+    Temos uma lista chamada 'locadora' é dentro dessa lista haverá Dicionários com,
+    os nomes dos filmes, seu respectivo ano, e seu diretor.
+
+        locadora = [{'Star Wars', 1977, 'George Lucas'}, {'Avengers', 2012, 'Joss Wheson'}]
+                        titulo      ano       diretor        titulo     ano     diretor
+                                    0                                      1
+
+    Os números como sabemos são os indices das listas e dentro tem o Dicionário.
+
+- O print desse exemplo seria assim:
+
+    print(locadora[0]['ano']) # Saída -> 1977
+    print(locadora[1]['titulo']) # Saída -> Avengers
