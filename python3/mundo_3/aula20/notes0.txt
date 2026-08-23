@@ -1,0 +1,61 @@
+Funções (Parte 1)
+
+--> Funções pro python funcionam como uma "Rotina", aquilo que você sempre faz. Neste
+exemplo de função serve para que façamos uma função que responda aquela necessidade
+individual que precisamos. Exemplo: Supomos que eu queira mostra um titulo na tenha, 
+com algumas linhas divisorias para fica mais elegânte.
+
+        =>           print('-----------------------------------')
+                     print('         Sistema Escolar           ')
+                     print('-----------------------------------')
+        =>           print('-----------------------------------')
+                     print('           Sistema PDV             ')
+                     print('-----------------------------------')
+        =>           print('-----------------------------------')
+                     print('              Login                ')
+                     print('-----------------------------------')
+
+        -> Se observar utilizei o mesmo print 6 vezes para a mesma funcionalizade que foi
+        mostrar linhas na tela. E nessa "Rotina" eu poderia otimizar isso fazendo com que,
+        mostra-se na tela um vez so essa linha. Exemplo:
+
+                        => def mostralinha():
+                                print('-----------------------------------')
+            E invés de ficar como mostramos no primeiro exemplo, ficaria dessa forma:
+                =>          mostralinha()
+                            print('         Sistema Escolar           ')
+                            mostralinha()
+                =>          mostralinha()
+                            print('           Sistema PDV             ')
+                            mostralinha()
+                =>          mostralinha()
+                            print('              Login                ')
+                            mostralinha()
+
+--> E para deixarmos mais personalizado ainda, podemos utilizar parâmetros. Exemplo:
+            => def mensagem(msg):
+
+        =>           print('-----------------------------------')
+                     print(msg)
+                     print('-----------------------------------')
+                mensagem('Sistema Escolar')
+
+        -> No def mensagem, podemos observar que existe um parâmetro nele que se chama
+           "msg" onde ele vai receber a mensagem = 'Sistema Escolar'
+
+--> No Python, é posivel a gente 'empacotar', números com funções (coisa que não pode-
+mos em outras linguagens), com isso podemos criar um contador como uma função. Exemplo:
+        def contador(*num): # O asterisco serve no python para desempacotar.
+        contador(5, 7, 3, 1, 4)
+        contador(8, 4, 7)
+    => Usando as tuplas fica mais limitado as operações.
+
+--> Podemos usar listas também, e neste caso, como listas ja são compostas, não será
+necessario desempacotar. No exemplo abaixo iremos criar uma função para dobra os valores
+dentro da lista.
+
+            => def dobra(lst):
+                    pos = 0
+                    while pos < len(lst):
+                        lst[pos] *= 2
+                        pos += 1
