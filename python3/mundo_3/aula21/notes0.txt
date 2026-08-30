@@ -1,0 +1,99 @@
+Funções (Parte 2)
+
+- Uma função interna que tem no python é o help(), que nos ajuda a usar o interactive
+help. Colocando essa função no terminal ou no proprio codigo 
+teremos um "manual" de cada função que existe no python.
+
+- As docstrings são utilizados para conseguimos visualizar o manual de uma def que criamos
+exemplo: 
+            def contador(i, f, p)
+                """
+                -> Faz uma contagem e mostra na tela.
+                :param i: inicio de uma contagem
+                :param f: fim de uma contagem
+                :param p: passos da contagem
+                :return: sem retorno
+                """
+                c = i
+                while c <= f:
+                    print(f'{c} ', end='')
+                    c += p
+                print('FIM!')
+            help(contador)
+Seguindo este exemplo, teremos uma documentação completa sobre a função contador.
+
+- Parametros opcionais: 
+    - Vamos supor que a função tenha três paramentros def somar(a, b, c) e ai com base nisso
+    teriamos que ter três valores dentro da função somar, mas é se eu quiser somente, dois 
+    valores? Ai entra a parte de paramentros opcionais. Exemplo:
+                def somar(a, b, c=0):
+                    s = a + b + c
+                    print(f'A soma vale {s}')
+        E também podemos usar isso em a e b sem problema. Ai teriamos a, b e c como paramentros
+        opcionais.
+- Escopo de variáveis, é o local de onda uma variavel vai existir é onde uma variável não vai
+mais existir. Exemplo:
+
+                    def teste():
+                        print(f'Na função teste, n vale {n}')
+                    # Progama Principal 
+                    n = 2 
+                    print(f'No programa principal, n vale {n}')
+
+                                      ⬆️
+
+                         - Chamamos isso de escopo global
+- Outro exemplo:
+                    def teste():
+                        x = 8
+                        print(f'Na função teste, n vale {n}')
+                        print(f'Na função teste, x vale {x}')
+                    # Progama Principal 
+                    n = 2 
+                    print(f'No programa principal, n vale {n}')
+                    teste()
+                    print(f'No programa principal, x vale {x}')
+
+                                    ⬆️
+
+                    - Neste exemplo o valor x não sera imprimido no programa principal,
+                    pois ele so existe na função teste, então chamamos isso de escopo local. O 
+                    n é uma variavel global enquanto o x é uma variavel local.
+
+- Um outro exemplo que ajuda em complicações que possam existir.
+
+                    def teste(y):
+                        n = 8
+                        y += 4
+                        x = 8
+                        print(f'Na função teste, n vale {n}')
+                        print(f'Na função teste, y vale {y}')
+                        print(f'Na função teste, x vale {x}')
+                    # Progama Principal 
+                    n = 2 
+                    teste(n)
+                    print(f'No programa principal, n vale {n}')
+
+                -> Neste exemplo repeti variavel n dentro da função teste com o valor 8.
+                Poderiamos pensar que ele iria apenas trocar os valores o n = 2 iria receber
+                o valor 8, mas não sera isso que vai acontecer. Neste caso teremos uma variavel
+                n local e outra global.
+
+- E temos outra foram onde podemos utilizar o n global dentro da função sem deixar-lo como local
+
+                    def teste(y):
+                        global n
+                        n = 8
+                        y += 4
+                        x = 8
+                        print(f'Na função teste, n vale {n}')
+                        print(f'Na função teste, y vale {y}')
+                        print(f'Na função teste, x vale {x}')
+                    # Progama Principal 
+                    n = 2 
+                    teste(n)
+                    print(f'No programa principal, n vale {n}')
+                - Escrevendo esta frase, "global n" estou informando ao python para ele 
+                não criar uma variavel n local dentro da função, mas sim manter o n global.
+                Apartir dai o n que vale 2 passa a valer 8.
+- Retorno de valores, para usarmo o retorno dos valores utilizamos o comando return
