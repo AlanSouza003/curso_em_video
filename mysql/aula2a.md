@@ -10,4 +10,5 @@ lançado em 1995 na Suiça. `Criadores: David Axmark, Allan Larsson e Michael Wi
 |DML -> Manipulação|
 |DQL -> Solicitações|
 |DCL -> Controle|
-
+|DTL -> Transações|
+    Transação é
