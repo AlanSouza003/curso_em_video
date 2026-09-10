@@ -11,4 +11,10 @@ lançado em 1995 na Suiça. `Criadores: David Axmark, Allan Larsson e Michael Wi
 |DQL -> Solicitações|
 |DCL -> Controle|
 |DTL -> Transações|
-    Transação é
+>Obs: Transação é, qualquer solicitação que pode ser feita a um banco de dados e, ele vai te atender da melhor maneira possivel seguindo os quatros principios chamado de DICA.
+
+
+|D -> Durabilidade|
+|I -> Isolamento|
+|C -> Consistência|
+|A -> Atomicidade|
