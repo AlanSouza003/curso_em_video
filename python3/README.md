@@ -42,4 +42,4 @@
 1. **Orientação a Objetos**
 2. **POO: Classes, Objetos, Atributos, etc.**
 3. **Rich no Python.**
-* **Status:** Em Andamento ⏳[Ver Código](https://github.com/AlanSouza003/curso_em_video/tree/main/python3/mundo_4/aula00)
+* **Status:** Em Andamento ⏳ [Ver Código](https://github.com/AlanSouza003/curso_em_video/tree/main/python3/mundo_4/aula00)
