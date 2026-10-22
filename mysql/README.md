@@ -302,3 +302,20 @@ lançado em 1995 na Suiça. `Criadores: David Axmark, Allan Larsson e Michael Wi
    > O `SUM()` retorna a soma dos valores.
    >
    > O `AVG()` retorna a média dos valores.
+
+### Agrupando Registros
+
+         SELECT carga FROM cursos
+         GROUP BY carga;
+
+### Agrupando & Agregando
+
+         SELECT carga, COUNT(nome) FROM cursos
+         GROUP BY carga;
+
+O comando *HAVING* serve para mostrar somente quem tem valores acima ou abaixo de
+determinado valor ex.:
+
+         SELECT carga, COUNT(nome) FROM cursos
+         GROUP BY carga
+         HAVING COUNT(nome) > 3;
